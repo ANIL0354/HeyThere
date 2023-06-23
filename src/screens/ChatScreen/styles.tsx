@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native'
+import { hp,wp,normalize } from '../../utils/responsiveness';
 
 const styles = StyleSheet.create({
    headerWrap:{
@@ -6,15 +7,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   headerUserImage:{
-    width: 43,
-    height: 43,
-    borderRadius: 43 / 2,
-    marginRight: 6,
+    width: hp(4),
+    height: hp(4),
+    borderRadius: hp(4 / 2),
+    marginRight: wp(0.6),
   },
   headerTxt:{
-    fontSize: 16,
-    lineHeight: 19,
+    fontSize: normalize(16),
+    lineHeight: hp(1.9),
     color: "#17282F",
+    paddingLeft:wp(1.4),
+    textAlign:"center"
   }
 });
 

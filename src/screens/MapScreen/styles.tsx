@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
-
+import {normalize} from '../../utils/responsiveness'
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         ...StyleSheet.absoluteFillObject,
     },
     title:{
-        fontSize:20,
+        fontSize:normalize(20),
         color:'purple',
         fontWeight:'500'
     }
