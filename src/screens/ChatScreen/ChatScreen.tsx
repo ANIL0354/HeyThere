@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image,SafeAreaView } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat';
 import ChatComponent from '../../components/ChatComponent';
 import styles from './styles';
@@ -38,12 +38,12 @@ const ChatScreen = (props:any) => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <SafeAreaView style={styles.container}>
     <ChatComponent 
         messages={messages}
         onMessageSend ={handleSend}
         updateUserWithNewMessage={()=>{}} />
-    </View>
+    </SafeAreaView>
   );
 };
 

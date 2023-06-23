@@ -2,6 +2,9 @@ import {StyleSheet} from 'react-native'
 import { hp,wp,normalize } from '../../utils/responsiveness';
 
 const styles = StyleSheet.create({
+  container:{
+    flex:1
+  },
    headerWrap:{
     flexDirection: "row",
     alignItems: "center",

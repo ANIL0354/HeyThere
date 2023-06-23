@@ -1,5 +1,5 @@
 import React,{useCallback} from 'react';
-import { View, Text } from 'react-native';
+import { View, Text,Platform } from 'react-native';
 import MapView,{ Marker }  from 'react-native-maps';
 import styles from './styles';
 
@@ -54,7 +54,6 @@ const MapScreen = (props:myProps) => {
          showsUserLocation={true}
          showsCompass={true}
          showsPointsOfInterest={false}
-         provider="google"
          >
         {userLocation && (
           <Marker
