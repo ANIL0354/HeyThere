@@ -1,7 +1,8 @@
 import React,{useCallback} from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 import MapView,{ Marker }  from 'react-native-maps';
 import styles from './styles';
+
 const otherUsers=require('../../utils/nearByUser.json')
 interface userType {
   id: number;
@@ -74,7 +75,8 @@ const MapScreen = (props:myProps) => {
                 title={marker.title}
                 onPress={()=>handleMarkerPress(marker)}
               >
-                <Text style={styles.title}>{marker.title}</Text></Marker>
+                <Text style={styles.title}>{marker.title}</Text>
+                </Marker>
                 ))
          }
       </MapView>

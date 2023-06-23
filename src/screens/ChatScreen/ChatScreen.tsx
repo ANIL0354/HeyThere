@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput, Button,TouchableOpacity,Image } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat';
 import ChatComponent from '../../components/ChatComponent';
 import styles from './styles';
